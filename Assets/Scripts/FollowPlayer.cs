@@ -10,7 +10,6 @@ public class FollowPlayer : MonoBehaviour
     {
         playerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
-
     void LateUpdate()
     {
         if (!playerScript.gameOver)
