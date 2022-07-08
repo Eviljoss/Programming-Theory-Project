@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ElevatorBehavior : ObstacleBehavior
+public class ElevatorBehavior : ObstacleBehavior //INHERITANCE
 {
     float speed = 1.0f;
     void Start()
     {
-        StartCoroutine(ChangeDirection());
+        StartCoroutine(ChangeDirection()); //ABSTRACTION
     }
     void Update()
     {
-        Mouvement();
+        Mouvement(); //ABSTRACTION
     }
-    protected override void Mouvement()
+    protected override void Mouvement() //POLYMORPHISM
     {
         if (goingForward)
         {

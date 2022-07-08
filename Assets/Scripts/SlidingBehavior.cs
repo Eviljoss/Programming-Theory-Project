@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SlidingBehavior : ObstacleBehavior
+public class SlidingBehavior : ObstacleBehavior //INHERITANCE
 {
     float speed = 2.0f;
     void Start()
     {
-        StartCoroutine(ChangeDirection());
+        StartCoroutine(ChangeDirection()); //ABSTRACTION
     }
     void Update()
     {
-        Mouvement();
+        Mouvement(); //ABSTRACTION
     }
-    protected override void Mouvement()
+    protected override void Mouvement() //POLYMORPHISM
     {
         if (goingForward)
         {

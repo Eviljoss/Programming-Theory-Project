@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotatingBehavior : ObstacleBehavior
+public class RotatingBehavior : ObstacleBehavior //INHERITANCE
 {
     bool clockwise = true;
     void Start()
     {
-        StartCoroutine(ChangeDirection());
+        StartCoroutine(ChangeDirection()); //ABSTRACTION
     }
     void Update()
     {
-        Rotation();
+        Rotation(); //ABSTRACTION
     }
     protected override void Mouvement()
     { }
-    protected override void Rotation()
+    protected override void Rotation() //POLYMORPHISM
     {
         float angle = transform.eulerAngles.z;
         if (clockwise && angle < 90 && angle >= 0)
@@ -35,7 +35,7 @@ public class RotatingBehavior : ObstacleBehavior
             transform.rotation = Quaternion.Euler(0, 0, 1);
         }
     }
-    protected override IEnumerator ChangeDirection()
+    protected override IEnumerator ChangeDirection() //POLYMORPHISM
     {
         yield return new WaitForSeconds(delay * 15);
         if (clockwise)

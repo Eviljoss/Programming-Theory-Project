@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class ObstacleBehavior : MonoBehaviour
+public abstract class ObstacleBehavior : MonoBehaviour //ENCAPSULATION
 {
-    protected bool goingForward = true;
-    protected const float delay = 0.5f;
+    protected bool goingForward = true; //ENCAPSULATION
+    protected const float delay = 0.5f; //ENCAPSULATION
     protected abstract void Mouvement();
     protected abstract void Rotation();
     protected virtual IEnumerator ChangeDirection()
