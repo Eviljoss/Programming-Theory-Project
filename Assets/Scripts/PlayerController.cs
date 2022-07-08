@@ -10,13 +10,10 @@ public class PlayerController : MonoBehaviour
     bool isOnGround;
     public bool gameOver = false;
     Rigidbody playerRb;
-    // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
