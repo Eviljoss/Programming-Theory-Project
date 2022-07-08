@@ -25,7 +25,5 @@ public class ElevatorBehavior : ObstacleBehavior
         }
     }
     protected override void Rotation()
-    {
-
-    }
+    { }
 }

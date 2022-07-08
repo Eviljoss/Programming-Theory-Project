@@ -25,7 +25,5 @@ public class SlidingBehavior : ObstacleBehavior
         }
     }
     protected override void Rotation()
-    {
-        
-    }
+    { }
 }

@@ -6,14 +6,6 @@ public abstract class ObstacleBehavior : MonoBehaviour
 {
     protected bool goingForward = true;
     protected const float delay = 0.5f;
-    void Start()
-    {
-
-    }
-    void Update()
-    {
-
-    }
     protected abstract void Mouvement();
     protected abstract void Rotation();
     protected virtual IEnumerator ChangeDirection()

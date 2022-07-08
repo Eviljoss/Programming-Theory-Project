@@ -7,18 +7,14 @@ public class RotatingBehavior : ObstacleBehavior
     bool clockwise = true;
     void Start()
     {
-        
         StartCoroutine(ChangeDirection());
     }
     void Update()
     {
-        
         Rotation();
     }
     protected override void Mouvement()
-    {
-
-    }
+    { }
     protected override void Rotation()
     {
         float angle = transform.eulerAngles.z;
